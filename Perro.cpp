@@ -6,12 +6,14 @@
 // Perro::Perro() : edad(0), raza(""), tamanio(""), color("") {}
 
 // Ejemplo de constructor por defecto iniciando los atributos en el cuerpo del constructor
-Perro::Perro() {
+/* Perro::Perro() {
     this->edad = 0;
     this->raza = "";
     this->tamanio = "";
     this->color = "";
-}
+}  */
+// Lista inicializadora
+Perro::Perro() : nombre("fifo"), edad(3), raza("Golden") , tamanio("Mediano"), color("Naranja"){}
 
 void Perro::ladrar() {
     std::cout << "Guau Guau" << std::endl;

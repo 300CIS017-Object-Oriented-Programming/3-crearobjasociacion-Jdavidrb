@@ -18,5 +18,13 @@ int main() {
     // Consultar el nombre del pPropietario del perro Firulais
     std::cout<< "El nombre del pPropietario del perro "<<firulais.getNombre() << " es " << firulais.getPropietario()->getNombre()<<std::endl;
 
+    Perro* perro1 = new Perro();
+    perro1->ladrar();
+
+    Propietario* propietario1 = new Propietario();
+
+    propietario1->mostrarInfo();
+
+
     return 0;
 }
