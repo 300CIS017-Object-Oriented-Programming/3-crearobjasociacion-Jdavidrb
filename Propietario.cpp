@@ -6,22 +6,31 @@
 
 //TODO Agrege el constructor por defecto y agrege un constructor con dos parametros
 Propietario::Propietario(){
-    this ->edad = 20;
+    edad = 20;
 }
 
-Propietario::Propietario(std::string nombre, std::string docIdentidad) {
+Propietario::Propietario(string nombre, string docIdentidad, int edad) {
  this->nombre = nombre;
  this->docIdentidad = docIdentidad;
+ this ->edad = edad;
 }
 
-std::string Propietario::getNombre()  {
-    return nombre;
-}
-
-void Propietario::setNombre(std::string nombre) {
+void Propietario::setNombre(string nombre) {
     this->nombre = nombre;
 }
+
+string Propietario::getNombre()  {
+    return nombre;
+}
+string Propietario::getDocIdentidad(){
+    return docIdentidad;
+}
+int Propietario::getEdad(){
+    return edad;
+}
+
 string Propietario::mostrarInfo(){
     cout << nombre << " " << docIdentidad << " " << edad << endl; 
 }
+
 

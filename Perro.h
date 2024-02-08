@@ -18,29 +18,37 @@ private:
     Propietario* pPropietario;
 
 public:
+
+    /* Constructores */
     //Perro();
-    Perro();
-    ~Perro(); //Destructor
+    Perro(); // constructor con lista inicializadora Part1 - 1
+    ~Perro(); //Destructor 
+
+    /* Funciones */
     void ladrar();
-    Propietario * getPropietario();
 
-    // Sirve para.......
-    void agregarPropietario(string nombre, string docIdentidad);
-
+    /* Set */
+    void setEdad(int edad);
+    void setRaza(string raza);
+    void setNombre(string nombre);
+    void setTamanio(string tamanio);
+    void setColor(string color);
+    /* Sirve para agregar un nuenvo propietario usando memoria dinamica 
+    al atributo pPropietario de nuestro objeto perro.  Part1 - 8 */
+    void agregarPropietario(string nombre, string docIdentidad , int edad);
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
     void setPropietario(Propietario * pPropietario);
 
-
+    /* Get */
+    Propietario * getPropietario();
     int getEdad();
-    void setEdad(int edad);
+    int getEdadPropietario(); // Consultar edad del propietario del perro
     string getRaza();
-    void setRaza(string raza);
     string getNombre();
-    void setNombre(string nombre);
     string getTamanio();
-    void setTamanio(string tamanio);
     string getColor();
-    void setColor(string color);
+    
+    
 
 };
 

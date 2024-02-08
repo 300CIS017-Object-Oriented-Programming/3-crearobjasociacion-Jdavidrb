@@ -13,13 +13,21 @@ private:
     string nombre;
     string docIdentidad;
     int edad;
+
 public:
-    //Propietario() = default; //Agrega constructor por defecto sin cuerpo
-    Propietario(); // Contrusctor de un solo parametro incializado en el cuerpo
-    Propietario(string nombre, string docIdentidad);
-    string mostrarInfo();
-    string getNombre();
+    /* Constructores */
+
+    Propietario(); // Contrusctor de un solo parametro incializado en el cuerpo Part1 - 2
+    Propietario(string nombre, string docIdentidad , int edad); // le agregue edad, Constructor con parametros
+    
+    /* Set */
     void setNombre(string nombre);
+    /* Get */
+    string getNombre();
+    string getDocIdentidad();
+    int getEdad();
+    /* Print */
+    string mostrarInfo();
 
 
 
