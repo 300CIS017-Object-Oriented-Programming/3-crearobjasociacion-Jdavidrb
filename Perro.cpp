@@ -13,7 +13,7 @@
     this->color = "";
 }  */
 // Lista inicializadora
-Perro::Perro() : nombre("fifo"), edad(3), raza("Golden") , tamanio("Mediano"), color("Naranja"){}
+Perro::Perro() : nombre("fifo"), edad(3), tamanio("Mediano"), color("Naranja"){}
 
 void Perro::ladrar() {
     std::cout << "Guau Guau" << std::endl;
@@ -47,12 +47,9 @@ void Perro::setEdad(int edad) {
     this->edad = edad;
 }
 
-std::string Perro::getRaza() {
-    return raza;
-}
 
-void Perro::setRaza(std::string raza) {
-    this->raza = raza;
+void Perro::setRaza(Raza* raza) {
+    this->pRaza = raza;
 }
 
 std::string Perro::getTamanio() {
@@ -86,6 +83,10 @@ Perro::~Perro() {
 // Consultar edad propietario 
 int Perro::getEdadPropietario(){
     return this->getPropietario()->getEdad();
+}
+
+Raza* Perro::getRaza(){
+    return pRaza;
 }
 
 

@@ -8,16 +8,19 @@
 #include <iostream>
 #include "Propietario.h"
 #include "Veterinario.h"
+#include "Raza.h"
 using namespace std;
 class Perro {
 private:
     int edad;
     string nombre;
-    string raza;
+    
     string tamanio;
     string color;
     Propietario* pPropietario;
     Veterinario* pVeterinario;
+    Raza* pRaza;
+    
 
 public:
 
@@ -31,7 +34,7 @@ public:
 
     /* Set */
     void setEdad(int edad);
-    void setRaza(string raza);
+    void setRaza(Raza* raza);
     void setNombre(string nombre);
     void setTamanio(string tamanio);
     void setColor(string color);
@@ -46,14 +49,11 @@ public:
     Propietario * getPropietario();
     int getEdad();
     int getEdadPropietario(); // Consultar edad del propietario del perro
-    string getRaza();
+    Raza* getRaza();
     string getNombre();
     string getTamanio();
     string getColor();
     Veterinario* getVeterinario();
-    
-    
-
 };
 
 #endif
