@@ -34,12 +34,18 @@ int main() {
 
     cout << "El documento del propietario "  << perro1 ->getPropietario() -> getNombre() << " duenio del perro " << perro1->getNombre() << " es " << perro1->getPropietario()->getDocIdentidad() << endl;
     
-    // Consultar edad del propietario del perro1. Par1 - 9
+    // Consultar edad del propietario del perro1. Part1 - 9
 
     // se me ocurren 2 maneras; como lo hicimos anteriormete con el documentoIdentidad :
     cout << "La edad del propietario "  << perro1 ->getPropietario() -> getNombre() << " duenio del perro " << perro1->getNombre() << "es " << perro1->getPropietario()->getEdad() << endl;
     //  O tambien hacer un metodo dentro de la clase.
-    cout << "la edad del propietario de " << perro1 -> getNombre() << " es " << perro1->getEdadPropietario() << endl; 
-    
+    cout << "la edad del propietario de " << perro1 -> getNombre() << " es " << perro1->getEdadPropietario() << endl;
+
+    /* Parte 2 */
+    perro1->agregarVeterianario("Aurerio", 10);
+    cout << "El veterinario de " << perro1->getNombre() << " es " << perro1->getVeterinario()->getNombre() << " y tiene " << perro1->getVeterinario()->getAniosExperiencia() << endl;
+
+
+
     return 0;
 }

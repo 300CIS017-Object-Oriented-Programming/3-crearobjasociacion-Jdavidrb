@@ -28,8 +28,15 @@ void Perro::agregarPropietario(std::string nombre, std::string docIdentidad , in
 void Perro::setPropietario(Propietario *pPropietario) {
     this->pPropietario = pPropietario;
 }
+
+void Perro::agregarVeterianario(string nombre, int aniosExperiencia){
+    this -> pVeterinario = new Veterinario(nombre, aniosExperiencia);
+}
 Propietario *Perro::getPropietario() {
     return this->pPropietario;
+}
+Veterinario* Perro::getVeterinario() {
+    return pVeterinario;
 }
 
 int Perro::getEdad() {
@@ -80,6 +87,8 @@ Perro::~Perro() {
 int Perro::getEdadPropietario(){
     return this->getPropietario()->getEdad();
 }
+
+
 
 
 
