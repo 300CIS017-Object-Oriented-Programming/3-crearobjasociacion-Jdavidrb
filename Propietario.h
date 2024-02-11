@@ -16,12 +16,13 @@ private:
 
 public:
     /* Constructores */
-
-    Propietario(); // Contrusctor de un solo parametro incializado en el cuerpo Part1 - 2
+    Propietario();//Costructor por defecto
+    Propietario(int); // Contrusctor de un solo parametro incializado en el cuerpo Part1 - 2
     Propietario(string nombre, string docIdentidad , int edad); // le agregue edad, Constructor con parametros
     
     /* Set */
-    void setNombre(string nombre);
+    void setNombre(string);
+    void setDocIdentidad(string);
     /* Get */
     string getNombre();
     string getDocIdentidad();

@@ -3,10 +3,10 @@
 //
 
 #include "Propietario.h"
-
-//TODO Agrege el constructor por defecto y agrege un constructor con dos parametros
-Propietario::Propietario(){
-    edad = 20;
+Propietario::Propietario(){}
+//Agrege el constructor por defecto y agrege un constructor con dos parametros
+Propietario::Propietario(int ed){
+    edad = ed;
 }
 
 Propietario::Propietario(string nombre, string docIdentidad, int edad) {
@@ -17,6 +17,9 @@ Propietario::Propietario(string nombre, string docIdentidad, int edad) {
 
 void Propietario::setNombre(string nombre) {
     this->nombre = nombre;
+}
+void Propietario::setDocIdentidad(string doc){
+    docIdentidad = doc;
 }
 
 string Propietario::getNombre()  {
@@ -30,7 +33,7 @@ int Propietario::getEdad(){
 }
 
 string Propietario::mostrarInfo(){
-    cout << nombre << " " << docIdentidad << " " << edad << endl; 
+    cout << "Informacion propietario: " << nombre << " - " << docIdentidad << " - " << edad << endl; 
 }
 
 

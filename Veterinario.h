@@ -10,6 +10,8 @@ private:
     int aniosExperiencia;
 public:
     Veterinario(string, int);
+    string setNombre(string);
+    int setAniosExperiencia(int);
     string getNombre();
     int getAniosExperiencia();
     

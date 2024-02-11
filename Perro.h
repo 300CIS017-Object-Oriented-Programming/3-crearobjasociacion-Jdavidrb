@@ -38,8 +38,9 @@ public:
     void setNombre(string nombre);
     void setTamanio(string tamanio);
     void setColor(string color);
-    /* Sirve para agregar un nuenvo propietario usando memoria dinamica 
-    al atributo pPropietario de nuestro objeto perro.  Part1 - 8 */
+
+    //Sirve para agregar un nuenvo propietario usando memoria dinamica 
+    //al atributo pPropietario de nuestro objeto perro.  Part1 - 8 */
     void agregarPropietario(string nombre, string docIdentidad , int edad);
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
     void setPropietario(Propietario * pPropietario);
